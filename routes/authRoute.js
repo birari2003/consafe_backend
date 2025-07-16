@@ -1,12 +1,12 @@
 import express from 'express';
 const router = express.Router();
-import db from '../database/db.js';
+import db from '../database/db.js'
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'; 
 
 
 router.post('/api/login', async (req, res) => {
-  const { phone, password } = req.body;
+  const { phone, password } = req.body; 
  
   if (!phone || !password) {
     return res.status(400).json({ success: false, message: 'Phone and password are required' });
