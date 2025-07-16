@@ -1,10 +1,10 @@
 const mysql = require('mysql2');
 
 const db = mysql.createConnection({ 
-  host: 'localhost',
-  user: 'root',
-  password: '', 
-  database: 'milk_distribution_app'
+  host: 'sql305.byethost18.com',
+  user: '	b18_22538669',
+  password: 'yuvraj7600', 
+  database: 'b18_22538669_milk_mate'
 });
 
 db.connect(err => {
