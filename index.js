@@ -7,7 +7,7 @@ import ownerRoute from './routes/ownerRoute.js';
 import customerRoute from './routes/customerRoute.js';
 import employeeRoute from './routes/employeeRoute.js';
 import milkRoute from './routes/milkRoute.js';
-import smsRoute from './routes/smsRoute.js'
+// import smsRoute from './routes/smsRoute.js'
 
  
 const app = express();
@@ -19,7 +19,7 @@ app.use(ownerRoute);
 app.use(employeeRoute);
 app.use(customerRoute);
 app.use(milkRoute);
-app.use('/', smsRoute);
+// app.use('/', smsRoute);
 
 app.listen(3000, '0.0.0.0', () => {
     console.log("Server running on port 3000");
